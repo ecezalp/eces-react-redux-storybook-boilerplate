@@ -4,9 +4,15 @@
   "description": "ece ozalp",
   "main": "./server.js",
   "scripts": {
-    "start": "npm i -g gulp@3.9.1 && gulp start"
+    "start": "npm i -g gulp@3.9.1 && gulp start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@storybook/addon-actions": "4.0.0-alpha.4",
+    "@storybook/addon-links": "4.0.0-alpha.4",
+    "@storybook/react": "4.0.0-alpha.4",
     "@types/node": "^7.0.70",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^0.14.22",
@@ -20,6 +26,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.7",
     "del": "^3.0.0",
     "dotenv": "^6.0.0",
@@ -50,9 +57,9 @@
     "svg-inline-loader": "^0.8.0",
     "typescript": "^3.1.1",
     "url-loader": "^0.6.2",
+    "vinyl-paths": "^2.1.0",
     "webpack": "^4.20.2",
-    "webpack-stream": "^5.1.1",
-    "vinyl-paths": "^2.1.0"
+    "webpack-stream": "^5.1.1"
   },
   "repository": {},
   "author": "Ece Ozalp",
